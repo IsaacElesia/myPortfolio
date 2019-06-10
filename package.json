@@ -1,6 +1,7 @@
 {
-  "name": "portfoilo",
+  "name": "portfolio",
   "version": "0.1.0",
+  "author": "Isaac Elesia",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
