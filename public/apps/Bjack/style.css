@@ -1,0 +1,271 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+#card-1 {
+  /* top: 120px; */
+  top: 12vh;
+}
+#card-2 {
+  /* top: 150px; */
+  top: 15vh;
+}
+#card-3 {
+  /* top: 180px; */
+  top: 18vh;
+}
+#card-4 {
+  /* top: 210px; */
+  top: 21vh;
+}
+#card-5 {
+  /* top: 240px; */
+  top: 24vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  background-image: linear-gradient(
+    rgba(36, 64, 48, 0.4),
+    rgba(70, 115, 89, 0.4),
+    rgba(163, 191, 175, 0.4),
+    rgba(26, 38, 31, 0.4)
+  );
+  font-family: Lato;
+  font-weight: 300;
+  position: relative;
+  height: 100vh;
+  color: #555;
+}
+
+.wrapper {
+  width: 75vw;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.player-0-panel,
+.player-1-panel {
+  width: 50%;
+  float: left;
+  height: 100%;
+  padding: 8%;
+  position: relative;
+}
+
+/**********************************************
+*** PLAYERS
+**********************************************/
+
+.player-name {
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  position: relative;
+}
+
+.player-score {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 100;
+  color: rgb(70, 115, 89);
+  margin-bottom: 130px;
+}
+
+.active {
+  background-color: #f7f7f7;
+}
+.active .player-name {
+  font-weight: 300;
+}
+
+.active .player-name::after {
+  content: "\2022";
+  font-size: 1.5;
+  position: absolute;
+  color: rgb(70, 115, 89);
+  top: -7%;
+  right: 5%;
+}
+
+.player-current-box {
+  background-color: rgb(70, 115, 89);
+  color: #fff;
+  width: 25%;
+  margin: 0 auto;
+  padding: 5%;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  right: 40%;
+}
+
+.player-current-label {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #eee;
+}
+
+.player-current-score {
+  font-size: 30px;
+}
+
+button {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #555;
+  background: none;
+  border: none;
+  font-family: Lato;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 300;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  font-weight: 600;
+}
+button:hover i {
+  margin-right: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+i {
+  color: rgb(70, 115, 89);
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 32px;
+  line-height: 1;
+  vertical-align: text-top;
+  margin-top: -4px;
+  transition: margin 0.3s;
+}
+
+.btn-new {
+  top: 5%;
+}
+.btn-hit {
+  top: 60%;
+}
+.btn-hold {
+  top: 75%;
+}
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 178px;
+  transform: translateX(-50%);
+  height: 150px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+
+.winner {
+  background-color: #f7f7f7;
+}
+.winner .player-name {
+  font-weight: 300;
+  color: rgb(70, 115, 89);
+}
+/**********************************************
+***  Media Queries
+**********************************************/
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 95vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 98vw;
+  }
+  .card {
+    max-height: 20%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .player-name {
+    font-size: 2em;
+    margin-top: 20%;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .player-name {
+    font-size: 1.8em;
+    margin-top: 30%;
+  }
+  .active .player-name::after {
+    right: -3%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .player-name {
+    font-size: 1.2em;
+    margin-top: 50%;
+  }
+  .active .player-name::after {
+    right: -8%;
+  }
+  .player-current-box {
+    width: 45%;
+    top: 62%;
+  }
+  .player-1-panel .player-current-box {
+    right: 15%;
+  }
+  .btn-hit {
+    top: 55%;
+  }
+  .btn-hold {
+    top: 80%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .player-name {
+    margin-top: 60%;
+    margin-bottom: 50%;
+  }
+  .active .player-name::after {
+    right: -15%;
+  }
+  .player-current-box {
+    width: 52%;
+    top: 69%;
+  }
+  .btn-hit {
+    top: 62%;
+  }
+  .btn-hold {
+    top: 87%;
+  }
+}

@@ -1,0 +1,46 @@
+/* 
+      Author: Isaac Elesia
+      Date: Oct. 13, 2018. 
+*/
+*,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.logo {
+  width: 10rem;
+  height: 2rem;
+}
+
+.page-heading {
+  width: 50%;
+  height: 5rem;
+}
+
+.is-valid {
+  border: 3px solid green;
+}
+.is-invalid {
+  border: 3px solid red;
+}
+#color-sample,
+#red,
+#green,
+#blue,
+#hexaNum,
+#colorName {
+  width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  .page-heading {
+    width: 80%;
+    height: 3rem;
+  }
+}

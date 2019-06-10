@@ -1,0 +1,129 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.isaac-logo {
+  /* ===Site Logo=== */
+  max-width: 40rem;
+
+  margin-top: -9rem;
+  margin-left: -5rem;
+  @include respond(tab-port) {
+    max-width: 35rem;
+    margin-top: -7.5rem;
+    margin-left: -5rem;
+  }
+  @include respond(phone) {
+    max-width: 30rem;
+    margin-top: -8rem;
+    margin-left: -5rem;
+  }
+}
+
+[class^="heading-"] {
+  padding-right: 2rem;
+  @include text-color($color-darkGray, $color-lightGray);
+}
+
+.heading-1 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  @include respond(phone) {
+    font-size: 3rem;
+  }
+}
+
+.heading-2 {
+  font-size: 3rem;
+  @include respond(phone) {
+    font-size: 1.8rem;
+  }
+}
+
+.heading-3 {
+  font-size: 2.5rem;
+  @include respond(phone) {
+    font-size: 1.5rem;
+  }
+}
+
+.heading-4 {
+  font-size: 2rem;
+  @include respond(phone) {
+    font-size: 1.5rem;
+  }
+}
+
+.text {
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
+  color: rgb(26, 25, 25) !important;
+}
+
+.feedback {
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
+  max-width: 22rem;
+  background-color: #fff;
+  @include respond(phone) {
+    font-size: 1rem !important;
+    max-width: 15rem;
+  }
+}
+
+.project-heading {
+  font-size: 4rem;
+  text-transform: capitalize;
+  // display: inline-block;
+  @include text-color($color-darkBlue, $color-lightBlue);
+}
+
+.title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-top: 2rem;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+
+.paragraph-2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  padding: 0 1.5rem;
+  color: $color-mediumBlue;
+}
+
+.anchor {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    @include text-color($color-darkGray, $color-lightGray);
+  }
+}
+
+.footer-text {
+  font-size: 2rem;
+  color: #eee;
+}
+
+p,
+dt {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+dd {
+  font-size: 1.5rem;
+}
+
+.aside-heading {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  // display: inline-block;
+  @include text-color($color-darkBlue, $color-lightBlue);
+}

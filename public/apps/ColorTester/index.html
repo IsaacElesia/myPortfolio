@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      Author: Isaac Elesia
+      Date:   Oct. 13, 2018.
+    -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!--  custom css -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Color Tester</title>
+  </head>
+
+  <body>
+    <!-- =============================================================
+                    Navigation Bar
+  ================================================================-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="logo-02.png" alt="Website Logo" class="logo"
+        /></a>
+      </div>
+    </nav>
+
+    <!-- =============================================================
+                  Main Content
+================================================================-->
+    <main class="container mt-3">
+      <!-- ============= Page Header ============================ -->
+      <div class="row">
+        <div class=" col-sm-12 col-12 ">
+          <img src="logo-02.png" alt="Page Heading" class="page-heading" />
+          <h2 class="bg-light mt-3 d-block">Color Form</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-between py-3">
+        <div class="col-5  text-center">Color Format</div>
+        <div class="col-6 text-center">Test Color</div>
+      </div>
+
+      <div class="row">
+        <div class="col-6  order-md-1 ">
+          <form id="colorForm" class="needs-validation" novalidate>
+            <!-- ============= RGB Color Input========================= -->
+            <div class=" row bg-light py-3">
+              <div class="col-md-2 mr-3 ml-0 ">
+                <input
+                  type="radio"
+                  value="rgb"
+                  id="rgb"
+                  name="color-format"
+                  class="form-check form-check-inline"
+                />
+                <label for="rgb">RGB</label>
+              </div>
+              <div class=" col-md-3 ">
+                <label for="red">Red</label>
+                <input type="text" size="6" id="red" name="red" />
+                <div class="redFeedback">
+                  <small>numbers must be between 0 and 255.</small>
+                </div>
+              </div>
+              <div class=" col-md-3 ">
+                <label for="green">Green</label>
+                <input type="text" size="6" id="green" name="blue" />
+                <div class="greenFeedback">
+                  <small>numbers must be between 0 and 255.</small>
+                </div>
+              </div>
+              <div class=" col-md-3 ">
+                <label for="blue">Blue</label>
+                <input type="text" size="6" id="blue" name="green" />
+                <div class="blueFeedback">
+                  <small>numbers must be between 0 and 255.</small>
+                </div>
+              </div>
+            </div>
+            <!-- ============= Hexadecimal Color Input====================== -->
+            <div class="row py-3">
+              <div class="col-md-4 mr-3 ml-0">
+                <input
+                  type="radio"
+                  value="Hexa"
+                  id="hexa"
+                  name="color-format"
+                  class="form-check form-check-inline"
+                />
+                <label for="hexa">Hexadecimal</label>
+              </div>
+              <div class=" col-md-6 ">
+                <input type="text" id="hexaNum" name="Hexa" />
+                <div class="hexaFeedback">
+                  <small
+                    >You must start with "#", choose any hexadecimal values 0 to
+                    f and your input must be equal to 6 characters not including
+                    the "#" .</small
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- ============= Name Color Input====================== -->
+            <div class="row bg-light py-3">
+              <div class="col-md-4 mr-3 ml-0">
+                <input
+                  type="radio"
+                  value="colorName"
+                  id="nameColor"
+                  name="color-format"
+                  class="form-check form-check-inline"
+                />
+                <label for="nameColor">Color Name</label>
+              </div>
+              <div class=" col-md-6 ">
+                <input type="text" id="colorName" name="colorName" />
+                <div class="colorNameFeedback">
+                  <small>Type in a valid color name.</small>
+                </div>
+              </div>
+            </div>
+            <!-- =============== Submit Button ======================== -->
+            <div class="row bg-light py-3 mt-4">
+              <div class="col-12 mr-3 ml-0">
+                <button class="btn btn-danger btn-lg submit">submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- =============== Display User Chosen Color ====================== -->
+        <div class="col-5 mr-3  order-md-2">
+          <textarea id="color-sample" rows="8"></textarea>
+        </div>
+      </div>
+    </main>
+    <!-- /.container -->
+
+    <!--============== Custom js to display user color=================== -->
+    <script type="text/javascript" src="colorSelect.js"></script>
+  </body>
+</html>

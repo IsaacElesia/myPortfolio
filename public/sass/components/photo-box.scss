@@ -1,0 +1,18 @@
+.photo {
+  text-align: center;
+  &-box {
+    max-width: 100%;
+    height: 15rem;
+
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    outline-offset: 1rem;
+
+    &:hover {
+      outline: 1rem solid $color-mediumBlue;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.4);
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.header {
+  background-color: #eee;
+  padding: 20rem 0 5rem;
+  @include respond(tab-port) {
+    padding-top: 15rem;
+  }
+}

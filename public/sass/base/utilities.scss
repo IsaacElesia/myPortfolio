@@ -1,0 +1,52 @@
+.u-align-text-right {
+  text-align: right;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 4rem;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 2rem;
+}
+
+.u-margin-top-1 {
+  margin-top: 10rem;
+  @include respond(tab-port) {
+    margin-top: 5rem;
+  }
+}
+.u-margin-top {
+  margin-top: 5rem;
+  @include respond(tab-port) {
+    margin-top: 3rem;
+  }
+}
+.u-margin-offset-1 {
+  margin-top: -17rem;
+  @include respond(tab-port) {
+    margin-top: -14rem;
+  }
+}
+.u-margin-offset-2 {
+  margin-top: -7rem;
+  @include respond(phone) {
+    margin-top: -3rem;
+  }
+}
+.u-margin-offset-small {
+  margin-top: -4rem;
+  @include respond(phone) {
+    margin-top: -2rem;
+  }
+}
+.u-line-height-small {
+  line-height: 0.9;
+}
+
+.z-index-3 {
+  z-index: 30;
+}

@@ -1,0 +1,9 @@
+.tooltips {
+  max-width: 30rem !important;
+  font-size: 1.5rem !important;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-lightBlue, 0.85),
+    rgba($color-darkBlue, 0.85)
+  ) !important;
+}

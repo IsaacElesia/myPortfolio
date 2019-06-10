@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "iweb";
+  src: url("../fonts/iweb.eot?sr96oz");
+  src: url("../fonts/iweb.eot?sr96oz#iefix") format("embedded-opentype"),
+    url("../fonts/iweb.ttf?sr96oz") format("truetype"),
+    url("../fonts/iweb.woff?sr96oz") format("woff"),
+    url("../fonts/iweb.svg?sr96oz#iweb") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.iweb {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "iweb" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iwebIsaac-Logo:before {
+  content: "\e900";
+}
