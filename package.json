@@ -4,7 +4,7 @@
   "author": "Isaac Elesia",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "jquery": "^3.4.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
